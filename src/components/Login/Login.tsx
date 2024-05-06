@@ -8,7 +8,7 @@ const Login = () => {
     return (
       <>
         <Button variant={"contained"} color={"error"} onClick={() => signOut()}>
-          Sign out
+          Entrar
         </Button>
       </>
     );
@@ -16,7 +16,7 @@ const Login = () => {
   return (
     <>
       <Button variant={"contained"} color={"success"} onClick={() => signIn()}>
-        Sign in
+        Sair
       </Button>
     </>
   );
