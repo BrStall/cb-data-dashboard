@@ -69,7 +69,7 @@ const Header = (props: HeaderProps) => {
               textDecoration: "none",
             }}
           >
-            DataSol
+            Datasol
           </Typography>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
@@ -88,16 +88,16 @@ const Header = (props: HeaderProps) => {
               textDecoration: "none",
             }}
           >
-            DataSol
+            Datasol
           </Typography>
           {tabletCheck && (
             <Box sx={{ paddingRight: 5, marginLeft: "auto" }}>
-              <Typography>Signed in as {session?.user?.email}</Typography>
+              <Typography> Conectado como {session?.user?.email} </Typography>  { /* Status de Conexão Conta */ }
             </Box>
           )}
           <ThemeToggleButton ColorModeContext={ColorModeContext} />
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open profile settings">
+            <Tooltip title="Abrir Configurações de Perfil">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt={session?.user?.name as string}
@@ -134,7 +134,7 @@ const Header = (props: HeaderProps) => {
               </MenuItem>
               <MenuItem onClick={() => (session ? signOut() : signIn())}>
                 <Typography textAlign="center">
-                  {session ? "Logout" : "Login"}
+                  {session ? "Sair" : "Entrar"}
                 </Typography>
               </MenuItem>
             </Menu>

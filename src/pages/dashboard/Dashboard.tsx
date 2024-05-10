@@ -6,6 +6,7 @@ import TransactionBottomRow from "@/components/Dashboard/TransactionBottomRow";
 import Grid from "@mui/material/Grid";
 
 const Dashboard = () => {
+
   return (
     <Box>
       <Grid container gap={4} marginTop={2}>
@@ -16,4 +17,5 @@ const Dashboard = () => {
     </Box>
   );
 };
+
 export default Dashboard;
